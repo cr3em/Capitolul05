@@ -1,4 +1,4 @@
-
+#include <iostream>
 
 int adunare(int a, int b){
     return a + b;
@@ -13,7 +13,9 @@ int inmultire(int a, int b){
 }
 
 int impartire(int a, int b){
-    if(a != 0)
+    if (b == 0) {
+        std::cout << "Impartirea la 0 invalida\n";
+    }
     return a / b;
 }
 
